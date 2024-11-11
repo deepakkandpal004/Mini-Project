@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="logo">
+            <span>Image Compressor</span>
+        </div>
+        <div>
+            <ul class="tools">
+                <li><a href="#compress-image">Compress Image</a></li>
+                <li><a href="#crop-image">Crop Image</a></li>
+                <li><a href="#jpg-converter">JPG Converter</a></li>
+                <li><a href="#background-remover">Background Remover</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Compress Image Section -->
+    <section id="compress-image" class="compress-image-section">
+        <div class="compress-container">
+            <h2>Compress Your Image</h2>
+            
+            <!-- Image Upload Section -->
+            <div class="upload-section">
+                <input type="file" id="image-upload" accept="image/*">
+                <label for="image-upload">Choose an Image</label>
+            </div>
+
+            <!-- Quality Selection -->
+            <div class="quality-section">
+                <label for="quality-slider">Select Compression Quality</label>
+                <input type="range" id="quality-slider" min="1" max="100" value="80">
+                <span id="quality-value">80%</span>
+            </div>
+
+            <!-- Compress Button -->
+            <button class="compress-btn" id="compress-btn">Compress Image</button>
+
+            <!-- Download Link for Compressed Image -->
+            <a id="download-link" style="display:none;">
+                <button class="compress-btn">Download Compressed Image</button>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
