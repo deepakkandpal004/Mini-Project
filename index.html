@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Compressor</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+
 </head>
 <body>
     <!-- Navbar Section -->
@@ -54,6 +56,32 @@
         </div>
     </section>
 
+    <section id="crop-image" class="crop-image-section">
+        <div class="crop-container">
+            <h2>Crop Your Image</h2>
+            
+            <!-- Crop Image Upload -->
+            <div class="upload-section">
+                <input type="file" id="crop-image-upload" accept="image/*">
+                <label for="crop-image-upload">Choose an Image to Crop</label>
+            </div>
+
+            <!-- Canvas for Crop Preview -->
+            <canvas id="crop-canvas" style="display:none;"></canvas>
+
+            <!-- Crop Controls -->
+            <div class="crop-controls" style="display:none;">
+                <button id="crop-btn">Crop Image</button>
+            </div>
+
+            <!-- Download Cropped Image -->
+            <a id="crop-download-link" style="display:none;">
+                <button class="compress-btn">Download Cropped Image</button>
+            </a>
+        </div>
+    </section>
+
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper
 </body>
 </html>

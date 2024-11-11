@@ -203,3 +203,28 @@ h2 {
         padding: 12px 25px;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Crop Image Section */
+.crop-image-section {
+    padding: 50px;
+    background-color: #333;
+    text-align: center;
+}
+
+.crop-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.crop-controls {
+    margin-top: 20px;
+}
