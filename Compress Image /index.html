@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor & Crop Tool</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <span>Image Tools</span>
+        </div>
+        <ul class="tools">
+            <li><a href="#compress-image">Compress Image</a></li>
+            <li><a href="#crop-image">Crop Image</a></li>
+            <li><a href="#jpg-converter">JPG Converter</a></li>
+            <li><a href="#background-remover">Background Remover</a></li>
+        </ul>
+        <div class="contact">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </div>
+
+    <section id="compress-image" class="compress-image-section">
+        <div class="compress-container">
+            <h2>Compress Your Image</h2>
+            <div class="upload-section">
+                <input type="file" id="image-upload" accept="image/*">
+                <label for="image-upload" class="upload-label">Choose an Image</label>
+            </div>
+    
+            <!-- Option 1: Preset quality buttons -->
+            <div class="quality-options">
+                <h3>Select Compression Quality:</h3>
+                <button class="quality-btn" data-quality="0.3">Low</button>
+                <button class="quality-btn" data-quality="0.6">Medium</button>
+                <button class="quality-btn" data-quality="0.9">High</button>
+            </div>
+    
+            <!-- Option 2: Text input for custom quality -->
+            <div class="quality-input-section">
+                <label for="quality-input">Enter Quality (1-100): </label>
+                <input type="number" id="quality-input" min="1" max="100" placeholder="80">
+            </div>
+    
+            <button class="compress-btn" id="compress-btn">Compress Image</button>
+            <a id="download-link" style="display:none;" class="download-link">
+                <button class="compress-btn">Download Compressed Image</button>
+            </a>
+        </div>
+    </section>    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -112,119 +112,104 @@ button {
     color: black;
 }
 
+h2 {
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
 .compress-image-section {
-    padding: 50px;
-    background-color: #222;
-    text-align: center;
+    height: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
 .compress-container {
+    width: 80%;
+    text-align: center;
     max-width: 600px;
-    margin: 0 auto;
-}
-
-h2 {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 45px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.2), 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .upload-section {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
-.upload-section input {
-    display: none;
-}
-
-.upload-section label {
-    font-size: 16px;
-    padding: 15px 30px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.upload-section label:hover {
-    color: white;
-    border: 2px solid white;
-    background-color: transparent;
-}
-
-.quality-section {
-    color: white;
-    margin-bottom: 30px;
-}
-
-#quality-slider {
-    width: 100%;
-    margin-top: 33px;
-}
-
-#quality-value {
+.upload-label {
     margin-top: 10px;
-    font-size: 18px;
-    font-weight: normal;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quality-options, .quality-input-section {
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.quality-btn {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quality-btn:hover {
+    background-color: #5a6268;
 }
 
 .compress-btn {
-    padding: 15px 30px;
-    margin-right: 25px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .compress-btn:hover {
-    border: 1.5px solid white;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
+    background-color: #218838;
 }
 
-@media (max-width: 768px) {
-    .compress-container {
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .upload-section label {
-        font-size: 16px;
-    }
-
-    .compress-btn {
-        font-size: 16px;
-        padding: 12px 25px;
-    }
+.download-link {
+    text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
+.download-link .compress-btn {
+    background-color: #007bff;
 }
 
-/* Crop Image Section */
-.crop-image-section {
-    padding: 50px;
-    background-color: #333;
-    text-align: center;
+.download-link .compress-btn:hover {
+    background-color: #0056b3;
 }
 
-.crop-container {
-    max-width: 600px;
-    margin: 0 auto;
+#image-upload {
+    display: none;
 }
 
-h2 {
-    font-size: 20px;
-    margin-bottom: 45px;
+label {
+    padding-left: 20px;
 }
 
-.crop-controls {
-    margin-top: 20px;
+#quality-input {
+    margin-left: 10px;
 }
