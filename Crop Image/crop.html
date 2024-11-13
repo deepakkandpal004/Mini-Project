@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Crop Tool</title>
+    <link rel="stylesheet" href="crop.css"> <!-- Link to a separate CSS file for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+</head>
+<body>
+
+<section id="crop-image" class="crop-image-section">
+    <div class="crop-container">
+        <h2>Crop Your Image</h2>
+        <div class="upload-section">
+            <input type="file" id="file-input" accept="image/*">
+            <label for="file-input" class="upload-label">Choose an Image</label>
+        </div>
+        <img id="image" style="display: none; max-width: 100%;">
+        <button id="crop-btn" class="crop-btn" style="display: none;">Crop Image</button>
+        <a id="download-link" style="display:none;">
+            <button class="crop-btn">Download Cropped Image</button>
+        </a>
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+<script src="crop.js"></script>
+</body>
+</html>
