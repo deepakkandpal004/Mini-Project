@@ -6,17 +6,26 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f9f9f9;
+    font-weight: bold;
     margin: 0;
 }
 
+.crop-image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .crop-container {
-    text-align: center;
+    height: 24vh;
+    width: 42vh;
     max-width: 600px;
+    text-align: center;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.2), 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .upload-section {
@@ -24,8 +33,10 @@ body {
 }
 
 .upload-label {
+    margin-top: 12px;
+    font-weight: bold;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 14px 20px;
     background-color: #007bff;
     color: #fff;
     border-radius: 4px;
@@ -33,7 +44,8 @@ body {
 }
 
 .crop-btn {
-    padding: 10px 20px;
+    font-weight: bold;
+    padding: 14px 20px;
     background-color: #28a745;
     color: white;
     border: none;

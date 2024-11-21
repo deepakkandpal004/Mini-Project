@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#dropzone.drag-over {
+  background-color: #f0f0f0;
+}
+
+#preview {
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+#convert-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

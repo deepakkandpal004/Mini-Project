@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const qualityButtons = document.querySelectorAll('.quality-btn');
   const qualityInput = document.getElementById('quality-input');
 
+
+  let islogin = false;
   let uploadedImage = null;
-  let compressionQuality = 0.8; // Default quality
+  let compressionQuality = 0.6; // Default quality
 
   // Handle preset quality buttons
   qualityButtons.forEach(button => {
@@ -42,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Compress and prepare image for download
   compressBtn.addEventListener('click', async () => {
+      const islogin = false;
       if (!uploadedImage || !uploadedImage.src) {
           alert('Please upload an image to compress.');
           return;

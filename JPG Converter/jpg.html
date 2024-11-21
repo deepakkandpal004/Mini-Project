@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JPG Converter</title>
+  <link rel="stylesheet" href="jpg.css">
+</head>
+<body>
+  <h1>JPG Converter</h1>
+    
+  <div id="dropzone">
+      <input type="file" id="file-input" accept="image/*" style="display:none;">
+      <p>Drag and drop image here or <a href="#" id="file-select">select a file</a></p>
+  </div>
+
+  <img id="preview" style="display:none;">
+
+  <div id="convert-options">
+      <button id="to-png">Convert to PNG</button>
+      <button id="to-webp">Convert to WebP</button>
+      <button id="download">Download</button>
+  </div>
+  <script src="jpg.js"></script>
+</body>
+</html>
