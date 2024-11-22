@@ -4,17 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Background Remover</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bg.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>Background Remover</h1>
-    <div class="upload-box">
-      <input type="file" id="file-input" accept="image/*">
-      <canvas id="canvas"></canvas>
-      <button id="download-btn" class="hidden">Download Image</button>
+    
+    <div class="upload-section" id="dropZone">
+        <p>Drag and drop an image or click to upload</p>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        <button class="btn" onclick="document.getElementById('fileInput').click()">Upload Image</button>
     </div>
-  </div>
-  <script src="script.js"></script>
+
+    <div class="tolerance-control">
+        <label for="tolerance">Color Tolerance: <span id="toleranceValue">30</span></label>
+        <input type="range" id="tolerance" min="0" max="100" value="30">
+    </div>
+
+    <div class="canvas-container">
+        <div class="canvas-wrapper">
+            <h3>Original Image</h3>
+            <canvas id="originalCanvas"></canvas>
+        </div>
+        <div class="canvas-wrapper">
+            <h3>Processed Image</h3>
+            <canvas id="processedCanvas"></canvas>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="btn" id="removeBtn" disabled>Remove Background</button>
+        <button class="btn" id="downloadBtn" disabled>Download Result</button>
+    </div>
+
+    <div class="loading" id="loading">Processing image...</div>
+</div>
+  <script src="bg.js"></script>
 </body>
 </html>

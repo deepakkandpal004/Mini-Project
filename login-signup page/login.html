@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Sign-up Page</title>
+    <link rel="stylesheet" href= "login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Image Section -->
+        <div class="image-section">
+            <h2>Welcome Back!</h2>
+            <p>Enter your personal details to use all of site features</p>
+        </div>
+
+        <!-- Forms Section -->
+        <div class="forms-section">
+            <!-- Loading Overlay -->
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+
+            <div class="forms">
+                <!-- Login Form -->
+                <div class="form login">
+                    <span class="title">Login</span>
+                    <div class="success" id="loginSuccess">Login successful!</div>
+                    <form id="loginForm">
+                        <div class="input-field">
+                            <input type="text" id="loginEmail" placeholder="Enter your email">
+                            <i class="fas fa-envelope"></i>
+                            <div class="error" id="loginEmailError"></div>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="loginPassword" placeholder="Enter your password">
+                            <i class="fas fa-lock"></i>
+                            <div class="error" id="loginPasswordError"></div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Login Now">
+                        </div>
+                        <div class="login-signup">
+                            Don't have an account? 
+                            <a id="signupLink">Signup</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="form signup">
+                    <span class="title">Registration</span>
+                    <div class="success" id="signupSuccess">Account created successfully!</div>
+                    <form id="signupForm">
+                        <div class="input-field">
+                            <input type="text" id="signupName" placeholder="Enter your name">
+                            <i class="fas fa-user"></i>
+                            <div class="error" id="signupNameError"></div>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="signupEmail" placeholder="Enter your email">
+                            <i class="fas fa-envelope"></i>
+                            <div class="error" id="signupEmailError"></div>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="signupPassword" placeholder="Create password">
+                            <i class="fas fa-lock"></i>
+                            <div class="error" id="signupPasswordError"></div>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="signupConfirmPassword" placeholder="Confirm password">
+                            <i class="fas fa-lock"></i>
+                            <div class="error" id="signupConfirmPasswordError"></div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Register Now">
+                        </div>
+                        <div class="login-signup">
+                            Already have an account? 
+                            <a id="loginLink">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
